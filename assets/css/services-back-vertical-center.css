@@ -1,0 +1,85 @@
+
+/* =====================================================
+   SERVICIOS – TEXTO (DEBAJO DEL TITULO) CENTRADO EN ALTO
+   Sin tocar grid/row/col (no rompe layout)
+   ===================================================== */
+
+/* 1) Panel BACK (donde aparece el titulo + descripcion) */
+.services-grid .serv-card .back{
+  /* Mantiene comportamiento de mostrar/ocultar; solo alineacion */
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:flex-start !important;
+  align-items:stretch !important;
+  text-align:center !important;
+}
+
+/* 2) Bloque texto (titulo + descripcion) ocupa todo el alto disponible */
+.services-grid .serv-card .back .service-text-center{
+  flex:1 1 auto !important;
+  display:flex !important;
+  flex-direction:column !important;
+  height:100% !important;
+  min-height:100% !important;
+  justify-content:flex-start !important;
+  align-items:center !important;
+  text-align:center !important;
+}
+
+/* 3) Titulo arriba */
+.services-grid .serv-card .back .service-text-center h1,
+.services-grid .serv-card .back .service-text-center h2,
+.services-grid .serv-card .back .service-text-center h3,
+.services-grid .serv-card .back .service-text-center h4{
+  flex:0 0 auto !important;
+  width:100% !important;
+  margin-bottom:12px !important;
+}
+
+/* 4) Texto debajo del titulo centrado verticalmente dentro del espacio restante */
+.services-grid .serv-card .back .service-text-center p{
+  flex:1 1 auto !important;
+  width:100% !important;
+  margin:0 !important;
+
+  display:flex !important;
+  align-items:center !important;      /* centro vertical */
+  justify-content:center !important;  /* centro horizontal */
+  text-align:center !important;
+}
+
+
+/* === FLOATING BUTTONS – PREMIUM FIX (GLOBAL) === */
+.whatsapp-float,
+.demo-float,
+.floating-whatsapp,
+.floating-demo {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* WhatsApp official logo only */
+.whatsapp-float img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,.28);
+}
+
+/* Demo button round */
+.demo-float {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#0b5c66,#0e7683);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    box-shadow:0 10px 25px rgba(0,0,0,.28);
+}

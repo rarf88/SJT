@@ -1,0 +1,256 @@
+/*
+  Modern UI layer for "Gestiones" product pages.
+  Safe-by-default: scoped to pages that include this stylesheet.
+*/
+
+:root{
+  /* Pantone 3155 C (RGB 16,99,116) */
+  --sjt-brand: #106374;
+  --sjt-brand-2: #0d4f5d;
+  --sjt-ink: #0b2730;
+  --sjt-muted: rgba(11,39,48,.72);
+  --sjt-bg: #f6fbfc;
+  --sjt-card: #ffffff;
+  --sjt-border: rgba(16,99,116,.16);
+  --sjt-shadow: 0 18px 48px rgba(11,39,48,.12);
+  --sjt-shadow-soft: 0 10px 28px rgba(11,39,48,.10);
+  --sjt-radius-xl: 22px;
+  --sjt-radius-lg: 18px;
+}
+
+/* page background */
+body{ background: var(--sjt-bg); }
+
+/* HERO */
+.g-hero{
+  position: relative;
+  padding: 44px 0 22px;
+  overflow: hidden;
+}
+.g-hero::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  background:
+    radial-gradient(900px 280px at 15% 20%, rgba(16,99,116,.22), transparent 60%),
+    radial-gradient(780px 280px at 85% 15%, rgba(16,99,116,.18), transparent 62%),
+    linear-gradient(180deg, rgba(16,99,116,.08), rgba(16,99,116,.0));
+  pointer-events:none;
+}
+.g-hero__inner{ position: relative; }
+
+.g-breadcrumb{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  align-items:center;
+  font-size: 13px;
+  color: var(--sjt-muted);
+  margin-bottom: 10px;
+}
+.g-breadcrumb a{ color: var(--sjt-brand); text-decoration: none; font-weight: 700; }
+.g-breadcrumb a:hover{ text-decoration: underline; }
+.g-breadcrumb .sep{ opacity: .6; }
+
+.g-hero h1{
+  margin: 0 0 10px;
+  font-size: clamp(30px, 3.4vw, 44px);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--sjt-ink);
+}
+.g-lead{
+  margin: 0 0 16px;
+  max-width: 78ch;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--sjt-muted);
+}
+
+.g-cta{ display:flex; gap:10px; flex-wrap:wrap; margin: 16px 0 14px; }
+
+.g-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  font-weight: 800;
+  text-decoration:none;
+  border: 1px solid transparent;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease;
+  will-change: transform;
+}
+.g-btn:active{ transform: translateY(1px); }
+.g-btn-primary{
+  background: var(--sjt-brand);
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(16,99,116,.22);
+}
+.g-btn-primary:hover{ background: var(--sjt-brand-2); box-shadow: 0 16px 34px rgba(16,99,116,.25); transform: translateY(-1px); }
+.g-btn-ghost{
+  background: rgba(255,255,255,.72);
+  color: var(--sjt-ink);
+  border-color: var(--sjt-border);
+  box-shadow: 0 10px 22px rgba(11,39,48,.08);
+  backdrop-filter: blur(8px);
+}
+.g-btn-ghost:hover{ transform: translateY(-1px); box-shadow: 0 14px 28px rgba(11,39,48,.10); }
+
+.g-badges{ display:flex; flex-wrap:wrap; gap:10px; margin-top: 8px; }
+.g-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--sjt-border);
+  background: rgba(255,255,255,.64);
+  backdrop-filter: blur(8px);
+  color: var(--sjt-ink);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* MAIN content: turn existing section into modern blocks */
+main .content-section{
+  background: transparent;
+  margin-top: 10px;
+}
+
+/* Hide legacy H1 to avoid duplicate with new hero H1 */
+main .content-section > h1{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+
+main .content-section > p{
+  color: var(--sjt-muted);
+  max-width: 88ch;
+  margin: 0 auto 22px;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.module-cards{
+  gap: 18px;
+  margin-top: 18px;
+}
+.module-card{
+  border-radius: var(--sjt-radius-xl);
+  border: 1px solid var(--sjt-border);
+  background: rgba(255,255,255,.92);
+  box-shadow: var(--sjt-shadow-soft);
+  overflow: hidden;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.module-card:hover{ transform: translateY(-3px); box-shadow: var(--sjt-shadow); border-color: rgba(16,99,116,.26); }
+
+.module-header{
+  background: linear-gradient(135deg, rgba(16,99,116,.13), rgba(16,99,116,.05));
+  border-bottom: 1px solid var(--sjt-border);
+  padding: 18px 18px 14px;
+}
+.module-header h2{ color: var(--sjt-ink); letter-spacing: -0.01em; }
+.module-header p{ color: var(--sjt-muted); }
+
+.features-list li{
+  padding: 12px 18px;
+  border-bottom: 1px dashed rgba(16,99,116,.16);
+  color: rgba(11,39,48,.86);
+}
+.features-list li:last-child{ border-bottom: none; }
+
+.benefits-section{
+  margin-top: 26px;
+  border-radius: var(--sjt-radius-xl);
+  border: 1px solid var(--sjt-border);
+  background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.86));
+  box-shadow: var(--sjt-shadow-soft);
+  padding: 22px;
+}
+.benefit-card{
+  border-radius: var(--sjt-radius-lg);
+  border: 1px solid rgba(16,99,116,.14);
+  background: #fff;
+  box-shadow: 0 10px 22px rgba(11,39,48,.07);
+}
+.benefit-card h3{ color: var(--sjt-ink); }
+.benefit-card p{ color: var(--sjt-muted); }
+
+.integration-section{
+  margin-top: 18px;
+  border-radius: var(--sjt-radius-xl);
+  border: 1px solid var(--sjt-border);
+  background: linear-gradient(135deg, rgba(16,99,116,.10), rgba(255,255,255,.86));
+  box-shadow: var(--sjt-shadow-soft);
+}
+.integration-content h2{ color: var(--sjt-ink); }
+.integration-content p{ color: var(--sjt-muted); }
+.integration-list li{ border-left-color: rgba(16,99,116,.35); }
+
+/* CTA at bottom */
+.g-final{
+  margin: 26px auto 10px;
+  padding: 22px;
+  border-radius: var(--sjt-radius-xl);
+  border: 1px solid rgba(16,99,116,.20);
+  background:
+    radial-gradient(900px 240px at 20% 30%, rgba(16,99,116,.18), transparent 60%),
+    radial-gradient(900px 240px at 80% 30%, rgba(16,99,116,.12), transparent 60%),
+    linear-gradient(135deg, rgba(255,255,255,.92), rgba(255,255,255,.82));
+  box-shadow: var(--sjt-shadow);
+}
+.g-final h2{ margin: 0 0 6px; color: var(--sjt-ink); letter-spacing: -0.01em; }
+.g-final p{ margin: 0 0 14px; color: var(--sjt-muted); max-width: 90ch; }
+
+/* responsive tweaks */
+@media (max-width: 900px){
+  .g-hero{ padding: 34px 0 18px; }
+  .g-cta{ margin-top: 14px; }
+  .benefits-section{ padding: 18px; }
+}
+
+
+/* === FLOATING BUTTONS – PREMIUM FIX (GLOBAL) === */
+.whatsapp-float,
+.demo-float,
+.floating-whatsapp,
+.floating-demo {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* WhatsApp official logo only */
+.whatsapp-float img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,.28);
+}
+
+/* Demo button round */
+.demo-float {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#0b5c66,#0e7683);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    box-shadow:0 10px 25px rgba(0,0,0,.28);
+}

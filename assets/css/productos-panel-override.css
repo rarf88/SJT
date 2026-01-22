@@ -1,0 +1,36 @@
+.productos-modulos-below .panel{background:var(--sjt-brand);border-radius:18px;padding:22px;box-shadow:0 10px 24px rgba(0,0,0,.18)}.productos-modulos-below .panel .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.productos-modulos-below .panel .card{background:transparent !important;box-shadow:none !important;border:0 !important}.productos-modulos-below .panel h4,.productos-modulos-below .panel h3,.productos-modulos-below .panel h2,.productos-modulos-below .panel h1,.productos-modulos-below .panel p,.productos-modulos-below .panel li,.productos-modulos-below .panel summary{color:var(--sjt-text-on-brand) !important}.productos-modulos-below .accordion-header{font-weight:700}.productos-modulos-below #modulos-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.productos-brandbox-container{max-width:1180px;margin:0 auto;padding:6px 10px}.productos-modulos-below .panel.brand-box{background:var(--sjt-brand);border-radius:22px;padding:20px 22px;position:relative}.productos-modulos-below .panel.brand-box:after{content:"";position:absolute;inset:8px;border-radius:16px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.15);pointer-events:none}.productos-modulos-below .panel .grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}.productos-modulos-below .panel .coltitle{color:var(--sjt-text-on-brand) !important;font-weight:800;letter-spacing:.6px;margin:4px 2px 14px;text-transform:uppercase;font-size:1.05rem}.productos-modulos-below .panel .card{background:transparent !important;box-shadow:none !important;border:0 !important;padding:0 !important}.productos-modulos-below .accordion-header{color:var(--sjt-text-on-brand) !important;background:rgba(255,255,255,.06);border-radius:12px;padding:12px 14px;margin-bottom:10px}.productos-modulos-below .accordion-item[open] .accordion-header{background:rgba(255,255,255,.12)}.productos-modulos-below #modulos-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.productos-modulos-below{margin-top:14px !important;margin-bottom:8px !important}.productos-modulos-below .panel .grid>div{background:#ffffff !important;border-radius:16px;padding:16px;box-shadow:0 10px 20px rgba(0,0,0,.08)}.productos-modulos-below .panel .grid>div .coltitle{color:var(--sjt-brand) !important;margin-top:2px;margin-bottom:12px}.productos-modulos-below .panel .grid>div .accordion-header{color:#0f1c22 !important;background:rgba(0,0,0,.035);border-radius:10px;padding:12px 14px}.productos-modulos-below .panel .grid>div,.productos-modulos-below .panel .grid>div p,.productos-modulos-below .panel .grid>div li,.productos-modulos-below .panel .grid>div summary{color:#0f1c22 !important}.productos-modulos-below .panel #modulos-grid>*{background:initial}.productos-modulos-below .panel .grid{align-items:stretch}.productos-modulos-below .panel .grid>div{background:#ffffff !important;border-radius:16px;padding:16px;box-shadow:0 10px 20px rgba(0,0,0,.08);height:100%;display:flex;flex-direction:column}.productos-modulos-below .panel #modulos-grid{flex:1 1 auto}.productos-modulos-below .panel .grid>div .coltitle{text-align:center;width:100%}.productos-modulos-below .panel .grid>div{min-height:320px}#entidad-selector-holder.entidad-chips{display:flex;flex-wrap:wrap;gap:8px;max-width:1180px;margin:4px auto 42px;padding:0 8px}.entidad-chip{background:#fff;color:var(--sjt-brand);border:1px solid var(--sjt-brand-border);border-radius:995px;padding:4px 8px;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.06);font-weight:600}.entidad-chip.active{background:var(--sjt-brand);color:var(--sjt-text-on-brand)}.gestiones-list{display:flex;flex-direction:column;gap:10px}.gestion-item{text-align:left;background:rgba(0,0,0,.035);border:1px solid rgba(0,0,0,.05);border-radius:10px;padding:10px 12px;cursor:pointer;font-weight:600}.gestion-item.active{background:rgba(0,0,0,.08)}#modulos-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.module-card{background:linear-gradient(135deg,#0f8a9d,#0f7b87);border-radius:16px;padding:14px 16px;color:#fff;display:flex;align-items:center;gap:10px;box-shadow:0 10px 20px rgba(0,0,0,.12)}.module-ico{font-size:20px;line-height:1}.module-title{font-weight:800}.entidad-chip{text-transform:uppercase;letter-spacing:.4px;font-weight:800}.gestion-item{display:flex;justify-content:space-between;align-items:center}.gi-cue{font-size:.85rem;opacity:.7}.gestion-item:hover .gi-cue{opacity:1}.page-hero,.hero-wrap{display:none !important}.mod-hint{display:none !important;visibility:hidden !important}.productos-brandbox-container .grid{align-items:stretch !important}.productos-brandbox-container .card{display:flex;flex-direction:column}.card.gestiones{min-height:auto !important}.card.gestiones .gestiones-list{flex:1 1 auto;overflow:auto;min-height:0}.card.gestiones .gestion-item{margin:2px 0 !important}.card.gestiones .gestion-item.active{outline:0 !important;box-shadow:inset 0 0 0 2px rgba(15,78,82,.2)}.module-card,.module-item{background:var(--module-bg,#f2f8f8) !important;border:1px solid rgba(15,78,82,.12) !important;box-shadow:0 1px 2px rgba(0,0,0,.04) !important}.module-card:hover,.module-item:hover{background:#e9f3f3 !important;border-color:rgba(15,78,82,.18) !important}.module-card .title,.module-item .title{font-weight:700 !important}.card.gestiones .gestiones-list{padding:4px 6px !important;gap:0 !important}.card.gestiones .gestion-item{padding:8px 12px !important;line-height:1.15 !important;min-height:36px !important}.card.gestiones .gestion-item .see{opacity:.65}.card.gestiones .gestion-item.active{box-shadow:inset 0 0 0 2px rgba(15,78,82,.15)}.module-card,.module-item{background:#d9f0f0 !important;border:1px solid rgba(15,78,82,.25) !important;box-shadow:0 1px 2px rgba(0,0,0,.06) !important}.module-card:hover,.module-item:hover{background:#cfe9e9 !important;border-color:rgba(15,78,82,.35) !important}#modulos-grid{gap:10px !important}.module-card{padding:10px 12px !important}.card.gestiones .gestiones-list{padding-bottom:0 !important}.card.gestiones .gestiones-list:has(.gestion-item:last-child.active){scroll-padding-bottom:0 !important}.card.gestiones .gestion-item:focus{outline:none !important}
+
+/* === FLOATING BUTTONS – PREMIUM FIX (GLOBAL) === */
+.whatsapp-float,
+.demo-float,
+.floating-whatsapp,
+.floating-demo {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* WhatsApp official logo only */
+.whatsapp-float img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,.28);
+}
+
+/* Demo button round */
+.demo-float {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#0b5c66,#0e7683);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    box-shadow:0 10px 25px rgba(0,0,0,.28);
+}

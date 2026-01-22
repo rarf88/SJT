@@ -1,0 +1,61 @@
+/* Sticky Footer - elimina espacio debajo del footer en pantallas altas
+   Mantiene el footer al fondo cuando el contenido es corto, sin afectar el diseño. */
+
+html, body {
+  height: 100% !important;
+  min-height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+main {
+  flex: 1 0 auto !important;
+  min-height: 0 !important;
+}
+
+footer {
+  flex-shrink: 0 !important;
+  margin-top: 0 !important;
+}
+
+
+/* === FLOATING BUTTONS – PREMIUM FIX (GLOBAL) === */
+.whatsapp-float,
+.demo-float,
+.floating-whatsapp,
+.floating-demo {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* WhatsApp official logo only */
+.whatsapp-float img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,.28);
+}
+
+/* Demo button round */
+.demo-float {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#0b5c66,#0e7683);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    box-shadow:0 10px 25px rgba(0,0,0,.28);
+}

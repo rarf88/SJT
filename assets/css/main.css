@@ -1,0 +1,222 @@
+:root{--teal:#0c4b55;--teal-700:#0a3f47;--light:#f6fbfc;--muted:#cfe7ea}*{box-sizing:border-box}html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;color:#102a2d;background:#fff}a{color:inherit;text-decoration:none}.site-header{position:sticky;top:0;z-index:40;background:var(--teal);box-shadow:0 1px 0 rgba(0,0,0,.1)}.container{max-width:1200px;margin:0 auto;padding:0 20px}.nav{display:flex;align-items:center;justify-content:space-between;height:72px}.logo{display:flex;align-items:center;gap:14px}.logo img{height:34px}.nav-links{display:flex;gap:40px}.nav-links a{color:#fff;letter-spacing:.04em;font-weight:700;font-size:14px;opacity:.9}.nav-links a:hover{opacity:1;text-decoration:underline}.slider{position:relative;width:100%;height:72vh;min-height:460px;background:linear-gradient(180deg,#0a2f34 0%,#0c4b55 100%);overflow:hidden}.slide{position:absolute;inset:0;display:block;opacity:0;transition:opacity 800ms ease-in-out;will-change:opacity;align-items:center;justify-content:center}.slide.active{opacity:1;z-index:1}.slide-inner{position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center}.slide-inner img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:drop-shadow(0 6px 18px rgba(0,0,0,.25))}.slider .arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:10;opacity:1;visibility:visible;pointer-events:auto;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.45);backdrop-filter:blur(4px);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#fff;cursor:pointer;transition:transform .15s ease,background-color .2s ease}.slider .arrow:hover{background:rgba(255,255,255,.28)}.slider .arrow.left{left:16px}.slider .arrow.right{right:16px}.dots{position:absolute;left:50%;transform:translateX(-50%);bottom:14px;display:flex;gap:8px}.dots button{width:10px;height:10px;border-radius:50%;border:0;background:rgba(255,255,255,.45);cursor:pointer}.dots button.active{background:#fff}.section{padding:64px 0}.section h2{font-size:28px;margin:0 0 12px;color:#0b3035}.section p{color:#385256;max-width:750px}.footer{background:var(--teal);color:#fff;margin-top:40px}.footer .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;padding:28px 0}.footer small{display:block;border-top:1px solid rgba(255,255,255,.15);padding:12px 0;opacity:.8}.social{display:flex;gap:14px}.social a{display:inline-flex;padding:8px;border-radius:9999px;background:rgba(255,255,255,.08)}.social img{width:20px;height:20px;display:block;filter:invert(1)}*{box-sizing:border-box}img,video{max-width:100%;height:auto}.container{max-width:1200px;margin:0 auto;padding-left:20px;padding-right:20px}.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.nav .nav-links{display:flex;gap:14px;flex-wrap:wrap}.pillars-grid,.segments-grid,.services-grid,.contact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.footer .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.prod-intro,.srv-intro{font-size:1.15rem;line-height:1.8}.hero-cta{position:absolute;left:50%;bottom:7%;transform:translateX(-50%);background:rgba(0,0,0,.35);color:#fff;padding:16px 20px;border-radius:14px;backdrop-filter:blur(4px);display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;max-width:92%;z-index:12}.hero-cta h2{margin:0;font-size:clamp(1.1rem,2vw,1.6rem);font-weight:800}.hero-cta p{margin:0;font-size:clamp(0.95rem,1.6vw,1.1rem);opacity:.95}.btn{display:inline-block;padding:10px 16px;border-radius:999px;font-weight:700;text-decoration:none}.btn-primary{background:#0c4b55;color:#fff;border:2px solid rgba(255,255,255,.85)}.btn-primary:hover{filter:brightness(1.08)}.btn-secondary{background:#ffffff;color:#0c4b55;border:2px solid rgba(12,75,85,.15)}.btn-secondary:hover{filter:brightness(1.06)}.cta-final{padding:38px 16px;background:linear-gradient(180deg,#f6fbfc,#ffffff);text-align:center}.cta-final h3{margin:0 0 10px;font-size:clamp(1.2rem,2.4vw,1.7rem);color:#0c4b55}.cta-final p{margin:0 0 16px;font-size:clamp(1rem,1.8vw,1.15rem);color:#102a2d}.cta-final .btn-primary{font-size:1rem}.cta-floating{position:fixed;right:12px;top:10px;z-index:9998;background:rgba(0,0,0,.38);color:#fff;padding:8px 10px;border-radius:12px;backdrop-filter:blur(3px);width:min(210px,38vw);box-shadow:0 10px 24px rgba(0,0,0,.22);display:flex;flex-direction:column;gap:5px;text-align:left;border:1px solid rgba(255,255,255,.28)}.cta-floating h2{margin:0 0 2px;font-size:clamp(0.82rem,1.9vw,0.98rem);font-weight:900}.cta-floating p{margin:0 0 3px;font-size:clamp(0.74rem,1.6vw,0.9rem);opacity:.95}.cta-floating .btn{font-size:clamp(0.72rem,1.5vw,0.85rem);padding:6px 9px;border-width:2px}.cta-floating .btn + .btn{margin-top:5px}.cta-floating .btn + .btn{margin-top:5px}}.cta-floating,.cta-banner,.promo-banner,.notice-card,.floating-cta{display:none !important;visibility:hidden !important;pointer-events:none !important;animation:none !important}.offcanvas .navbar-brand,.offcanvas .brand,.offcanvas .logo,.offcanvas .header-logo,.offcanvas img[alt*="SJT"],.offcanvas img[alt*="Smart"],.offcanvas img[alt*="SMARTH"],,,,,.drawer .navbar-brand,.drawer .brand,.drawer .logo,.drawer .header-logo{display:none !important;visibility:hidden !important;height:0 !important;width:0 !important;padding:0 !important;margin:0 !important;overflow:hidden !important}.sjt-mobile-logo-overlay{display:none !important;visibility:hidden !important;height:0 !important;width:0 !important;padding:0 !important;margin:0 !important;overflow:hidden !important}#sjt-mobile-drawer img,#sjt-mobile-menu img,,.mobile-drawer img,.mobile-offcanvas img,.offcanvas .logo img,.offcanvas img.logo,aside,aside.drawer img{display:none !important;visibility:hidden !important;height:0 !important;width:0 !important;padding:0 !important;margin:0 !important;overflow:hidden !important}header.site-header .logo img,header.site-header .brand img,header.site-header img.brand-sjt{display:inline-block !important;visibility:visible !important;height:auto !important;width:auto !important}.footer .container{margin-left:auto !important;margin-right:auto !important;text-align:center !important}.footer .grid{justify-items:center !important;align-items:center !important}.footer h4,.footer p,.footer a,.footer small,.footer .copyright{text-align:center !important}.footer-social,.social,.redes,.redes-sociales{justify-content:center !important}.back-home-btn:hover,.back-home-btn:focus-visible{filter:brightness(0.92);outline:none}
+/* Mobile menu scrollability */
+
+
+
+/* === FORCE FIX: Header logo spacing + Mobile/Tablet menu visibility === */
+
+/* 1) Desktop/tablet header spacing (>= 992px) */
+
+
+/* 2) Make sure header containers never clip the menu */
+header.site-header,
+header.site-header .site-header__inner,
+header.site-header .site-header__nav{
+  overflow: visible !important;
+}
+
+/* 3) Mobile/Tablet: ensure menu is visible and tappable (<= 991.98px) */
+
+
+/* Video en primer slide del carrusel */
+.slide-inner video.slide-media{max-width:100%;max-height:100%;width:auto;height:auto;display:block;margin:0 auto;object-fit:contain;}
+
+/* Altura fija y uniforme para carrusel principal en escritorio */
+@media (min-width: 992px){
+  .slider{
+    height: 480px;
+  }
+  .slider .slide,
+  .slider .slide-inner{
+    height: 100%;
+  }
+  .slider .slide-inner img,
+  .slider .slide-inner video.slide-media{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Ajustes finales opción C */
+@media (min-width: 992px){
+  .slider{
+    background-color:#4689A7 !important;
+  }
+  .slider .slide-inner{
+    background-color:#4689A7 !important;
+  }
+  .slider .slide-inner img{
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+  }
+  .slider .slide-inner video.slide-media{
+    width:100% !important;
+    height:100% !important;
+    object-fit:contain !important;
+    background-color:#4689A7 !important;
+  }
+}
+
+
+/* ===============================
+   SAFE FIX: Footer height uniform
+   - Keep existing layouts intact
+   - Remove "space phantom" before footer
+   - Ensure back-home button never affects footer flow
+   =============================== */
+
+/* Prevent last content block from adding extra space before footer */
+main > *:last-child:not(footer) {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* If some pages wrap content in .page or .container, neutralize last block too */
+.page > *:last-child:not(footer),
+.page-content > *:last-child:not(footer),
+.main-content > *:last-child:not(footer) {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Back-home button should be floating, not inflating footer */
+.back-home-btn {
+  position: fixed !important;
+  right: 18px;
+  bottom: 110px;
+  z-index: 9999;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 640px){
+  .back-home-btn { right: 14px; bottom: 92px; }
+}
+
+
+/* ===== FIX SLIDE CON IMAGEN (REEMPLAZO DE VIDEO) ===== */
+.hero-slide img,
+.hero-slide-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero,
+.hero-slide,
+.hero-container {
+  position: relative;
+  min-height: 90vh;
+  overflow: hidden;
+}
+\n
+/* ===============================
+   FIX ESPACIO VACÍO BAJO FOOTER
+   (RESPONSIVE)
+   =============================== */
+
+body,
+main {
+  min-height: auto !important;
+  height: auto !important;
+}
+
+.hero,
+.hero-slide,
+.hero-container {
+  min-height: 80vh;
+}
+
+footer {
+  margin-top: 0 !important;
+}
+\n
+body {
+  display: block !important;
+}
+
+main {
+  flex: none !important;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+
+/* =====================================================
+   FIX SAFE: ELIMINA ESPACIO VACÍO EN PANTALLAS BAJAS
+   (SIN TOCAR SLIDES / HERO)
+   ===================================================== */
+
+/* Evita que el layout fuerce altura completa */
+html, body {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+/* Si existe layout flex en body, neutralízalo SOLO en pantallas bajas */
+@media (max-height: 820px) {
+  body {
+    display: block !important;
+  }
+  main {
+    flex: none !important;
+    min-height: auto !important;
+    height: auto !important;
+  }
+
+  /* No permitir secciones "pantalla completa" que creen huecos */
+  .page,
+  .page-wrapper,
+  .content,
+  .content-wrapper,
+  .main-content {
+    min-height: auto !important;
+    height: auto !important;
+  }
+}
+
+
+/* === FLOATING BUTTONS – PREMIUM FIX (GLOBAL) === */
+.whatsapp-float,
+.demo-float,
+.floating-whatsapp,
+.floating-demo {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* WhatsApp official logo only */
+.whatsapp-float img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,.28);
+}
+
+/* Demo button round */
+.demo-float {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#0b5c66,#0e7683);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    box-shadow:0 10px 25px rgba(0,0,0,.28);
+}

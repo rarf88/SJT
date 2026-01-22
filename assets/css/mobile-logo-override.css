@@ -1,0 +1,36 @@
+.offcanvas .navbar-brand,.offcanvas .brand,.offcanvas .logo,.offcanvas .header-logo,.offcanvas img[alt*="SJT"],.offcanvas img[alt*="Smart"],.offcanvas img[alt*="SMARTH"],,,,,.drawer .navbar-brand,.drawer .brand,.drawer .logo,.drawer .header-logo{display:none !important;visibility:hidden !important;height:0 !important;width:0 !important;padding:0 !important;margin:0 !important;overflow:hidden !important}.sjt-mobile-logo-overlay{display:none !important;visibility:hidden !important;height:0 !important;width:0 !important;padding:0 !important;margin:0 !important;overflow:hidden !important}#sjt-mobile-drawer img,#sjt-mobile-menu img,,.mobile-drawer img,.mobile-offcanvas img,.offcanvas .logo img,.offcanvas img.logo,aside,aside.drawer img{display:none !important;visibility:hidden !important;height:0 !important;width:0 !important;padding:0 !important;margin:0 !important;overflow:hidden !important}header.site-header .logo img,header.site-header .brand img,header.site-header img.brand-sjt{display:inline-block !important;visibility:visible !important;height:auto !important;width:auto !important}
+
+/* === FLOATING BUTTONS – PREMIUM FIX (GLOBAL) === */
+.whatsapp-float,
+.demo-float,
+.floating-whatsapp,
+.floating-demo {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* WhatsApp official logo only */
+.whatsapp-float img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,.28);
+}
+
+/* Demo button round */
+.demo-float {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#0b5c66,#0e7683);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    box-shadow:0 10px 25px rgba(0,0,0,.28);
+}

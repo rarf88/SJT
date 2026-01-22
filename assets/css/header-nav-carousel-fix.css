@@ -1,0 +1,36 @@
+header,.navbar,.site-header{display:flex;align-items:center}header .logo,.navbar .logo,.site-logo,.brand{display:flex;align-items:center}header .logo img,.navbar .logo img,.site-logo img,.brand img,.logo img{height:auto!important;width:auto!important;object-fit:contain!important;max-height:52px!important}header .lines,header .decor,header .stripe,.navbar .lines{display:none!important}.carousel,.slider,.hero-carousel,.main-carousel{width:100%!important;margin:0 auto!important;background:transparent!important}.carousel img,.carousel-item img,.slide img,.slides img,.hero-carousel img,.main-carousel img{width:100%!important;height:auto!important;object-fit:cover!important;display:block}#sjt-hamburger{position:absolute;top:6px;right:10px;z-index:10000;background:transparent;border:0;width:44px;height:44px;display:inline-flex;flex-direction:column;justify-content:center;gap:5px}#sjt-hamburger .bar{display:block;width:24px;height:2px;background:#fff;margin:0 auto;border-radius:2px}#sjt-mobile-drawer{position:fixed;top:0;right:0;bottom:0;width:78vw;max-width:360px;background:#0f2f35;color:#fff;transform:translateX(100%);transition:transform .25s ease;z-index:9998;padding:20px 18px;box-shadow:-8px 0 24px rgba(0,0,0,.35)}#sjt-mobile-drawer.open{transform:translateX(0)}#sjt-mobile-drawer a{color:#fff;text-decoration:none;display:block;padding:12px 4px;border-bottom:1px solid rgba(255,255,255,.12)}#sjt-mobile-scrim{position:fixed;inset:0;background:rgba(0,0,0,.45);opacity:0;pointer-events:none;transition:opacity .2s ease;z-index:9997}#sjt-mobile-scrim.show{opacity:1;pointer-events:auto}:root{--nav-bg:#376777}#sjt-mobile-drawer{background:var(--nav-bg)!important}.offcanvas .navbar-brand,.offcanvas .brand,.offcanvas .logo,.offcanvas .header-logo,.offcanvas img[alt*="SJT"],.offcanvas img[alt*="Smart"],.offcanvas img[alt*="SMARTH"],,,,,.drawer .navbar-brand,.drawer .brand,.drawer .logo,.drawer .header-logo{display:none !important;visibility:hidden !important;height:0 !important;width:0 !important;padding:0 !important;margin:0 !important;overflow:hidden !important}.sjt-mobile-logo-overlay{display:none !important;visibility:hidden !important;height:0 !important;width:0 !important;padding:0 !important;margin:0 !important;overflow:hidden !important}#sjt-mobile-drawer img,#sjt-mobile-menu img,,.mobile-drawer img,.mobile-offcanvas img,.offcanvas .logo img,.offcanvas img.logo,aside,aside.drawer img{display:none !important;visibility:hidden !important;height:0 !important;width:0 !important;padding:0 !important;margin:0 !important;overflow:hidden !important}header.site-header .logo img,header.site-header .brand img,header.site-header img.brand-sjt{display:inline-block !important;visibility:visible !important;height:auto !important;width:auto !important}header.site-header{backface-visibility:hidden;-webkit-font-smoothing:antialiased;will-change:height}#sjt-header-spacer{display:block;width:100%;height:0}header.site-header{position:sticky;top:0;z-index:1000}header.site-header{background-color:var(--header-bg,#0e3f42)}header.site-header .logo img.brand-sjt{display:block;background-color:var(--header-bg,#0e3f42)}#sjt-header-inner{transform-origin:top}#sjt-header-spacer{display:block;width:100%;height:74px}header.site-header{position:sticky;top:0;z-index:1000}#sjt-header-veil{position:fixed;top:0;left:0;right:0;height:74px;background:var(--header-bg,#0e3f42);pointer-events:none;z-index:999;transform-origin:top}header.site-header,.site-header,header{transition-property:none !important;transition:none !important;min-height:74px !important;height:74px !important}#sjt-header-veil{position:fixed;top:0;left:0;right:0;height:90px;background:transparent;pointer-events:none;z-index:999;transform-origin:top;opacity:0}
+
+/* === FLOATING BUTTONS – PREMIUM FIX (GLOBAL) === */
+.whatsapp-float,
+.demo-float,
+.floating-whatsapp,
+.floating-demo {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* WhatsApp official logo only */
+.whatsapp-float img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,.28);
+}
+
+/* Demo button round */
+.demo-float {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#0b5c66,#0e7683);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    box-shadow:0 10px 25px rgba(0,0,0,.28);
+}

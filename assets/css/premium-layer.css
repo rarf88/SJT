@@ -1,0 +1,49 @@
+
+:root{--brand:#106374;--dark:#0b2f35}
+.premium-section{background:linear-gradient(180deg,var(--brand),var(--dark));color:#fff;padding:64px 0;margin:64px 0}
+.premium-wrap{max-width:1200px;margin:auto;padding:0 24px}
+.premium-title{text-align:center;font-size:34px;margin-bottom:12px}
+.premium-sub{text-align:center;opacity:.9;max-width:820px;margin:0 auto 40px}
+.premium-dashboard{display:grid;grid-template-columns:2fr 1fr;gap:24px}
+.mock{background:rgba(255,255,255,.15);border-radius:18px;padding:20px}
+.chart{height:180px;border-radius:12px;background:linear-gradient(90deg,rgba(255,255,255,.2),rgba(255,255,255,.05))}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.kpi{background:rgba(0,0,0,.25);border-radius:14px;padding:16px;text-align:center}
+.kpi b{font-size:26px;display:block}
+@media(max-width:900px){.premium-dashboard{grid-template-columns:1fr}}
+
+
+/* === FLOATING BUTTONS – PREMIUM FIX (GLOBAL) === */
+.whatsapp-float,
+.demo-float,
+.floating-whatsapp,
+.floating-demo {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* WhatsApp official logo only */
+.whatsapp-float img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,.28);
+}
+
+/* Demo button round */
+.demo-float {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#0b5c66,#0e7683);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    box-shadow:0 10px 25px rgba(0,0,0,.28);
+}

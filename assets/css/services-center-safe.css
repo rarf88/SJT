@@ -1,0 +1,118 @@
+
+/* =====================================================
+   SERVICIOS – CENTRADO SEGURO (sin romper el layout)
+   Centra SOLO el contenido de los paneles de texto
+   (como el bloque verde "Asesorías" y cualquier panel back)
+   ===================================================== */
+
+/* 1) Bloque "Asesorías" (wrapper insertado previamente) */
+.asesorias-center{
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;  /* vertical */
+  align-items:center !important;      /* horizontal */
+  text-align:center !important;
+  height:100% !important;
+  min-height:100% !important;
+}
+.asesorias-center > h1,
+.asesorias-center > h2,
+.asesorias-center > h3,
+.asesorias-center > h4,
+.asesorias-center > p{
+  width:100% !important;
+  text-align:center !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+/* 2) Paneles "back"/detalle de servicios (clases típicas) */
+/* No tocamos .card/.row/.col/.grid para no desaparecer elementos */
+.services .flip-card-back,
+.services .card-back,
+.services .service-back,
+.services .service-details,
+.services .service-detail,
+.services .service-info,
+.services .service-description{
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  align-items:center !important;
+  text-align:center !important;
+}
+
+/* 3) Asegurar centrado del texto dentro de esos paneles */
+.services .flip-card-back h1,
+.services .flip-card-back h2,
+.services .flip-card-back h3,
+.services .flip-card-back h4,
+.services .flip-card-back p,
+.services .card-back h1,
+.services .card-back h2,
+.services .card-back h3,
+.services .card-back h4,
+.services .card-back p,
+.services .service-details h1,
+.services .service-details h2,
+.services .service-details h3,
+.services .service-details h4,
+.services .service-details p,
+.services .service-info h1,
+.services .service-info h2,
+.services .service-info h3,
+.services .service-info h4,
+.services .service-info p{
+  width:100% !important;
+  text-align:center !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+/* 4) Si el panel tiene altura fija, este ajuste aprovecha el alto disponible */
+.services .flip-card-back,
+.services .card-back,
+.services .service-back,
+.services .service-details,
+.services .service-info{
+  height:100% !important;
+  min-height:100% !important;
+  padding:24px !important;
+  box-sizing:border-box !important;
+}
+
+
+/* === FLOATING BUTTONS – PREMIUM FIX (GLOBAL) === */
+.whatsapp-float,
+.demo-float,
+.floating-whatsapp,
+.floating-demo {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* WhatsApp official logo only */
+.whatsapp-float img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,.28);
+}
+
+/* Demo button round */
+.demo-float {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#0b5c66,#0e7683);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    box-shadow:0 10px 25px rgba(0,0,0,.28);
+}

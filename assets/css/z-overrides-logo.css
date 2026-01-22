@@ -1,0 +1,74 @@
+header .navbar-brand img,.navbar-brand img,header .logo img,.site-logo img{max-height:40px !important;height:auto !important;width:auto !important;display:block !important;filter:drop-shadow(0 1px 0 rgba(0,0,0,.35))}header .navbar,.navbar{overflow:visible !important;padding-top:6px !important;padding-bottom:6px !important}
+/* === ENFORCED Footer Brand Background (2025-10-24) === */
+footer,.footer,footer.light{
+  background-image:url("../img/footer-bg-sjt.png") !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
+  background-position:center !important;
+  background-color:transparent !important;
+}
+
+/* === Responsive Hard Overrides (mobile <=640px) === */
+
+
+
+
+.productos-brandbox-container{min-width:auto!important;width:100%!important;max-width:100%!important}
+}
+
+
+
+
+
+/* === Responsive Hardening Overrides (2025-10-24) === */
+/* Global fluid media and no horizontal scroll */
+html,body{max-width:100%;overflow-x:hidden}
+img,video,iframe,embed,object{max-width:100%;height:auto}
+
+/* Reset overly aggressive fixed widths/min-widths on small screens */
+
+
+/* Make product chips container wrap & center on small screens */
+
+
+/* Flex children are allowed to shrink */
+
+
+/* Header/logo safeguards for very small phones */
+
+
+
+/* === FLOATING BUTTONS – PREMIUM FIX (GLOBAL) === */
+.whatsapp-float,
+.demo-float,
+.floating-whatsapp,
+.floating-demo {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* WhatsApp official logo only */
+.whatsapp-float img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,.28);
+}
+
+/* Demo button round */
+.demo-float {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#0b5c66,#0e7683);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    box-shadow:0 10px 25px rgba(0,0,0,.28);
+}

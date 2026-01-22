@@ -1,0 +1,190 @@
+/* Premium Site Layer – aligns all pages with Servicios visual language (non-breaking overrides) */
+:root{
+  --brand:#106374;
+  --brand-dark:#073842;
+  --bg:#f6f8f9;
+  --surface:#ffffff;
+  --ink:#0f172a;
+  --muted:#475569;
+  --ring:rgba(2,8,23,.10);
+  --soft:rgba(16,99,116,.14);
+}
+
+body.site-premium{
+  background:var(--bg);
+  color:var(--ink);
+}
+
+/* Layout rhythm */
+body.site-premium .main section,
+body.site-premium main section{
+  padding:56px 0;
+}
+
+body.site-premium .main section:first-child,
+body.site-premium main section:first-child{
+  padding-top:40px;
+}
+
+body.site-premium .container{
+  width:min(1200px, calc(100% - 40px));
+}
+
+/* Typography hierarchy */
+body.site-premium h1{
+  letter-spacing:-.02em;
+  line-height:1.08;
+}
+body.site-premium h2{
+  letter-spacing:-.02em;
+  line-height:1.15;
+}
+body.site-premium .section-title,
+body.site-premium h2{
+  text-align:center;
+}
+body.site-premium p{
+  color:var(--muted);
+  line-height:1.65;
+}
+body.site-premium .lead,
+body.site-premium .subtitle,
+body.site-premium .section-subtitle{
+  max-width:78ch;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+/* Card system */
+body.site-premium .card,
+body.site-premium .card-3d,
+body.site-premium .card--panel{
+  background:var(--surface);
+  border-radius:18px;
+  border:1px solid rgba(2,8,23,.06);
+  box-shadow:0 14px 32px var(--ring);
+}
+body.site-premium .card-3d{
+  transform:translateZ(0);
+}
+body.site-premium .card:hover,
+body.site-premium .card-3d:hover{
+  box-shadow:0 18px 46px rgba(2,8,23,.14);
+  transform:translateY(-2px);
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+body.site-premium .card h3,
+body.site-premium .card-3d h3{
+  color:var(--ink);
+  letter-spacing:-.01em;
+}
+
+/* Buttons */
+body.site-premium .btn,
+body.site-premium .btn-primary,
+body.site-premium .btn-primary2,
+body.site-premium .nav__link--button{
+  border-radius:14px;
+  font-weight:800;
+}
+body.site-premium .btn-primary,
+body.site-premium .btn-primary2{
+  background:var(--brand);
+  border:1px solid rgba(255,255,255,.10);
+}
+body.site-premium .btn-primary:hover,
+body.site-premium .btn-primary2:hover{
+  background:var(--brand-dark);
+}
+
+/* Hero-style first blocks: make top area feel premium without changing markup */
+body.site-premium main > section:first-child .container,
+body.site-premium .main > section:first-child .container{
+  position:relative;
+}
+body.site-premium main > section:first-child{
+  background:linear-gradient(180deg, rgba(16,99,116,.12), rgba(246,248,249,0));
+}
+body.site-premium main > section:first-child h1,
+body.site-premium main > section:first-child h2{
+  color:var(--ink);
+}
+
+/* Chips / pills (used across products & gestiones) */
+body.site-premium .chip,
+body.site-premium .pill,
+body.site-premium .badgeR,
+body.site-premium .badge{
+  border-radius:999px;
+}
+
+/* Grids: make dense lists read as modern columns */
+@media (min-width: 860px){
+  body.site-premium .features,
+  body.site-premium .benefits,
+  body.site-premium .cards,
+  body.site-premium .grid,
+  body.site-premium .grid3{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:16px;
+    align-items:stretch;
+  }
+}
+
+/* Reduce “PDF feel”: give lists breathing room */
+body.site-premium ul{
+  padding-left:18px;
+}
+body.site-premium li{
+  margin:6px 0;
+}
+
+/* Responsive polishing */
+@media (max-width: 860px){
+  body.site-premium .main section,
+  body.site-premium main section{
+    padding:44px 0;
+  }
+}
+@media (max-width: 520px){
+  body.site-premium .container{
+    width:min(1200px, calc(100% - 28px));
+  }
+}
+
+/* === FLOATING BUTTONS – PREMIUM FIX (GLOBAL) === */
+.whatsapp-float,
+.demo-float,
+.floating-whatsapp,
+.floating-demo {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* WhatsApp official logo only */
+.whatsapp-float img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,.28);
+}
+
+/* Demo button round */
+.demo-float {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#0b5c66,#0e7683);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    box-shadow:0 10px 25px rgba(0,0,0,.28);
+}

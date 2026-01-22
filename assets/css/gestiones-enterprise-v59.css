@@ -1,0 +1,113 @@
+
+/* v59 – Gestiones Enterprise Premium (unique per gestion, no texto genérico repetido) */
+:root{
+  --brand:#106374;
+  --brand-dark:#073842;
+  --ink:#0f172a;
+  --muted:#475569;
+  --bg:#f6f8f9;
+  --card:#ffffff;
+  --ring:rgba(2,8,23,.10);
+}
+.gx{background:var(--bg);color:var(--ink)}
+.gx .wrap{width:min(1200px,100%);margin:0 auto;padding:0 20px}
+.gx-hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(180deg,var(--brand),var(--brand-dark));
+  color:#fff;padding:58px 0 18px;
+}
+.gx-hero::before{
+  content:"";position:absolute;inset:-60px;
+  background:
+    radial-gradient(520px 240px at 12% 12%, rgba(255,255,255,.18), transparent 60%),
+    radial-gradient(520px 240px at 90% 60%, rgba(255,255,255,.12), transparent 60%);
+  pointer-events:none;
+}
+.gx-hero .wrap{display:grid;grid-template-columns:1.12fr .88fr;gap:28px;position:relative;z-index:2}
+.gx-eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.9}
+.gx-title{font-size:44px;line-height:1.08;margin:12px 0 10px;letter-spacing:-.02em;text-wrap:balance}
+.gx-lead{max-width:62ch;opacity:.95;font-size:16px;line-height:1.6}
+.gx-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.gx-chip{display:inline-flex;align-items:center;padding:8px 10px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);font-size:13px}
+.gx-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.gx-btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 14px;border-radius:14px;font-weight:800;text-decoration:none}
+.gx-btn--primary{background:#fff;color:var(--brand)}
+.gx-btn--ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.22)}
+.gx-panel{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:16px;backdrop-filter:blur(10px);box-shadow:0 30px 80px rgba(0,0,0,.28)}
+.gx-panel__head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+.gx-pill{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.18);font-size:12px}
+.gx-panel__title{font-weight:900;letter-spacing:.14em;text-transform:uppercase;font-size:12px;opacity:.9}
+.gx-viz{background:rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:14px}
+.gx-viz h3{margin:0 0 10px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.9}
+.gx-kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.gx-kpi{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:12px}
+.gx-kpi b{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.9}
+.gx-kpi span{display:block;font-size:16px;margin-top:6px;font-weight:800}
+.gx-sec{padding:54px 0}
+.gx-sec--alt{background:#eef3f5}
+.gx-h2{text-align:center;font-size:28px;letter-spacing:-.02em;margin:0 0 10px;text-wrap:balance}
+.gx-sub{text-align:center;color:var(--muted);max-width:78ch;margin:0 auto 26px;line-height:1.6}
+.gx-grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.gx-card{background:var(--card);border-radius:18px;padding:18px;box-shadow:0 14px 32px var(--ring)}
+.gx-card h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:.14em;color:var(--brand)}
+.gx-card ul{margin:0;padding-left:18px;color:#0f172a}
+.gx-badges{display:flex;gap:10px;flex-wrap:wrap}
+.gx-badge{padding:8px 10px;border-radius:999px;background:#fff;border:1px solid rgba(2,8,23,.08);font-size:13px}
+.gx-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.gx-step{background:var(--card);border-radius:18px;padding:16px;border:1px solid rgba(2,8,23,.06)}
+.gx-step b{display:block;color:var(--brand);text-transform:uppercase;letter-spacing:.14em;font-size:12px;margin-bottom:8px}
+.gx-step span{display:block;font-weight:800}
+.gx-ctaBox{
+  background:linear-gradient(180deg,var(--brand),#0b4f5b);color:#fff;border-radius:22px;
+  padding:26px;display:flex;align-items:center;justify-content:space-between;gap:18px;
+  box-shadow:0 26px 70px rgba(2,8,23,.22)
+}
+.gx-ctaBox h2{margin:0 0 6px}
+.gx-ctaBox p{margin:0;opacity:.95}
+@media(max-width:1024px){
+  .gx-hero .wrap{grid-template-columns:1fr}
+  .gx-title{font-size:38px}
+  .gx-grid2{grid-template-columns:1fr}
+  .gx-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gx-ctaBox{flex-direction:column;align-items:stretch}
+}
+@media(max-width:520px){
+  .gx-title{font-size:32px}
+  .gx-steps{grid-template-columns:1fr}
+}
+
+
+/* === FLOATING BUTTONS – PREMIUM FIX (GLOBAL) === */
+.whatsapp-float,
+.demo-float,
+.floating-whatsapp,
+.floating-demo {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* WhatsApp official logo only */
+.whatsapp-float img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,.28);
+}
+
+/* Demo button round */
+.demo-float {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#0b5c66,#0e7683);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    box-shadow:0 10px 25px rgba(0,0,0,.28);
+}
