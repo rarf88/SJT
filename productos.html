@@ -1,18 +1,248 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SJT · Productos | Grupo AAA Asesores — SJT ERP</title>
-  <meta name="description" content="Explora todas las gestiones y módulos de SJT ERP por tipo de entidad. Solicita una demo.">
-  <link rel="preload" as="image" href="assets/img/slide-1.webp">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel=\"stylesheet\" href=\"assets/css/premium-site.css\">
-<link rel="stylesheet" href="assets/css/asesorias-center.css">
-<link rel="stylesheet" href="assets/css/services-center-safe.css">
-<link rel="stylesheet" href="assets/css/services-text-center-final.css">
-<link rel="stylesheet" href="assets/css/services-back-vertical-center.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Productos · SJT ERP</title>
+<meta content="Plataforma ERP en la nube para entidades públicas: trazabilidad total, cumplimiento DIAN y eficiencia operativa. Solicite una demo." name="description"/>
+<link as="image" href="assets/img/slide-1.webp" rel="preload"/>
+<link href="assets/css/styles.css" rel="stylesheet"/>
+<link href='\"assets/css/premium-site.css\"' rel='\"stylesheet\"'/>
+<link href="assets/css/asesorias-center.css" rel="stylesheet"/>
+<link href="assets/css/services-center-safe.css" rel="stylesheet"/>
+<link href="assets/css/services-text-center-final.css" rel="stylesheet"/>
+<link href="assets/css/services-back-vertical-center.css" rel="stylesheet"/>
+<style>
+/* =====================================================
+   SERVICIOS (REDISEÑO MODERNO) — Scoped
+   No afecta otras páginas.
+   ===================================================== */
+.svc-page{ padding:0 0 40px; }
+.svc-wrap{ width:min(1100px, 92%); margin:0 auto; }
+.svc-section{ padding:56px 0; }
+.svc-section--alt{ background: rgba(0,0,0,0.03); }
 
+.svc-hero{ padding:72px 0 56px; }
+.svc-hero__inner{ width:min(1100px, 92%); margin:0 auto; text-align:center; }
+.svc-eyebrow{ letter-spacing:.14em; font-weight:700; opacity:.75; margin:0 0 10px; }
+.svc-hero h1{ margin:0 auto 12px; max-width: 820px; }
+.svc-subtitle{ margin:0 auto 18px; max-width: 860px; opacity:.9; }
+.svc-hero__cta{ display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:18px; }
+.svc-btn{ display:inline-flex; align-items:center; justify-content:center; padding:12px 16px; border-radius:14px; text-decoration:none; font-weight:700; }
+.svc-btn--primary{ background: #106374; color:#fff; }
+.svc-btn--ghost{ background: rgba(10,166,166,.10); color:#106374; border:1px solid rgba(10,166,166,.25); }
+
+.svc-hero__bar{ display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin-top:18px; }
+.svc-pill{ padding:8px 12px; border-radius:999px; background: rgba(0,0,0,.05); font-weight:600; }
+
+.svc-head{ text-align:center; margin-bottom:18px; }
+.svc-head h2{ margin:0 0 6px; }
+.svc-head p{ margin:0; opacity:.9; }
+
+.svc-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap:16px; }
+.svc-card{ background:#fff; border-radius:18px; overflow:hidden; border:1px solid rgba(0,0,0,.06); box-shadow: 0 8px 24px rgba(0,0,0,.06); }
+.svc-card__media{ height:260px; overflow:hidden; background:#fff; }
+.svc-card__media img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+
+.svc-mini-media{
+  border-radius:18px;
+  overflow:hidden;
+  background:#fff;
+  height:320px;
+}
+.svc-mini-media img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  display:block;
+  border-radius:18px;
+}
+.svc-card__body{ padding:16px 16px 18px; }
+.svc-card__body h3{ margin:0 0 8px; font-size:1.05rem; text-align:center; }
+.svc-card__body p{ margin:0; opacity:.92; line-height:1.55; text-align:justify; hyphens:auto; }
+
+.svc-split{ display:grid; grid-template-columns: 1.05fr .95fr; gap:22px; align-items:start; }
+.svc-mini-media{ margin-top:14px; border-radius:18px; overflow:hidden; border:1px solid rgba(0,0,0,.06); background:#fff; }
+.svc-mini-media img{ width:100%; height:220px; object-fit:cover; display:block; }
+
+.svc-list{ display:grid; gap:12px; }
+.svc-list__item{ background:#fff; border:1px solid rgba(0,0,0,.06); border-radius:16px; padding:14px 14px; box-shadow: 0 8px 22px rgba(0,0,0,.05); }
+.svc-list__item h3{ margin:0 0 6px; font-size:1rem; }
+.svc-list__item p{ margin:0; opacity:.92; line-height:1.45; }
+
+.svc-steps{ display:grid; grid-template-columns: repeat(4, 1fr); gap:14px; }
+.svc-step{ background:#fff; border:1px solid rgba(0,0,0,.06); border-radius:16px; padding:14px; box-shadow: 0 8px 22px rgba(0,0,0,.05); display:flex; gap:12px; }
+.svc-step__num{ width:34px; height:34px; border-radius:12px; display:flex; align-items:center; justify-content:center; background: rgba(10,166,166,.12); color:#106374; font-weight:800; flex:0 0 auto; }
+.svc-step__content h3{ margin:0 0 6px; font-size:1rem; }
+.svc-step__content p{ margin:0; opacity:.92; line-height:1.45; }
+
+.svc-faq{ display:grid; gap:10px; }
+.svc-qa{ background:#fff; border:1px solid rgba(0,0,0,.06); border-radius:16px; padding:10px 12px; box-shadow: 0 8px 22px rgba(0,0,0,.05); }
+.svc-qa summary{ cursor:pointer; font-weight:800; list-style:none; }
+.svc-qa summary::-webkit-details-marker{ display:none; }
+.svc-qa__a{ padding:10px 2px 2px; }
+.svc-qa__a p{ margin:0; opacity:.92; line-height:1.5; }
+
+.svc-cta{ padding:54px 0 10px; }
+.svc-cta__box{ background: linear-gradient(135deg, rgba(10,166,166,.12), rgba(0,0,0,.02)); border:1px solid rgba(0,0,0,.06); border-radius:20px; padding:18px 18px; display:flex; gap:14px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+.svc-cta__text h2{ margin:0 0 6px; }
+.svc-cta__text p{ margin:0; opacity:.92; }
+.svc-cta__actions{ display:flex; gap:10px; flex-wrap:wrap; }
+
+@media (max-width: 980px){
+  .svc-grid{ grid-template-columns: repeat(2, 1fr); }
+  .svc-steps{ grid-template-columns: repeat(2, 1fr); }
+  .svc-split{ grid-template-columns: 1fr; }
+}
+@media (max-width: 560px){
+  .svc-grid{ grid-template-columns: 1fr; }
+  .svc-steps{ grid-template-columns: 1fr; }
+  .svc-card__media{ height:260px; overflow:hidden; background:#fff; }
+  .svc-hero{ padding:56px 0 44px; }
+}
+
+.no-crop{ object-fit:contain !important; padding:4px; background:#fff; }
+
+/* Ajuste final: SOLO imagen de Asesorías (+40%) */
+.asesoria-big{
+  border-radius:18px;
+
+  transform: scale(1.4);
+  transform-origin: center;
+}
+
+/* ================= PREMIUM INTERACTIONS ================= */
+.svc-card{
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+.svc-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.12);
+}
+.svc-card__media img{
+  transition: transform .5s ease;
+}
+.svc-card:hover .svc-card__media img{
+  transform: scale(1.04);
+}
+
+/* Scroll reveal (CSS-only) */
+.svc-section{
+  opacity: 0;
+  transform: translateY(24px);
+  animation: reveal .8s ease forwards;
+}
+.svc-section:nth-of-type(2){ animation-delay:.1s; }
+.svc-section:nth-of-type(3){ animation-delay:.2s; }
+.svc-section:nth-of-type(4){ animation-delay:.3s; }
+@keyframes reveal{
+  to{ opacity:1; transform:none; }
+}
+
+/* Hierarchy refinement */
+.svc-head h2{
+  letter-spacing:-.02em;
+}
+.svc-hero h1{
+  letter-spacing:-.03em;
+}
+
+
+/* WhatsApp icon clean (no background) */
+.wa-fab {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+}
+.wa-fab img {
+  width: 56px;
+  height: 56px;
+  display: block;
+}
+
+</style>
+<style>
+/* Scoped fixes: Servicios only */
+.subbar-green{height:10px;background:#0f6b6d;width:100%;}
+.svc-section--tight{padding-top:0 !important;margin-top:0 !important;}
+/* reduce any accidental large gap from previous section bottom spacing */
+.svc-hero{padding-bottom:28px !important;}
+.svc-pills{margin-bottom:16px !important;}
+</style>
+<style>
+/* FIX imagen Asesorías */
+.svc-card__media,
+.svc-feature__media {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.svc-card__media img,
+.svc-feature__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  display: block;
+}
+</style>
+<style>
+
+.svc-mini-media{
+  border-radius:18px;
+  overflow:hidden;
+  background:#fff;
+  height:260px;           /* menor altura */
+  max-width:520px;        /* controla ancho */
+}
+
+.svc-mini-media img{
+  width:100%;
+  height:100%;
+  object-fit:contain;     /* NO cortar la imagen */
+  display:block;
+  border-radius:18px;
+}
+</style>
+<style>
+
+.svc-mini-media{
+  border-radius:18px;
+  overflow:hidden;
+  background:#fff;
+  width:100%;
+  max-width:520px;
+}
+
+.svc-mini-media img{
+  width:100%;
+  height:auto;          /* respeta proporción real */
+  object-fit:initial;  /* sin forzar recorte */
+  display:block;
+  border-radius:18px;
+}
+</style>
+<style>
+/* Asesorías – FIX estructural definitivo */
+.svc-mini-media{
+  width:100%;
+  max-width:520px;
+  background:transparent;
+  border-radius:18px;
+  overflow:hidden;
+}
+
+.svc-mini-media img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:18px;
+  object-fit:unset;
+}
+</style>
 <style>
 /* === SJT FAB OVERRIDE (FINAL) === */
 a.demo-float{
@@ -65,154 +295,295 @@ a.wa-float img{
   a.wa-float img{ width:30px !important; height:30px !important; }
 }
 </style>
+<link href="assets/css/hamburger-fix.css" rel="stylesheet"/>
+<link href="assets/css/footer-mobile-fix.css" rel="stylesheet"/>
+<link href="assets/css/footer-mobile-redesign.css" rel="stylesheet"/>
+<link href="assets/css/footer-mobile-premium.css" rel="stylesheet"/>
+
+<style>
+.btn-ver{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px 16px;
+  border-radius:999px;
+  background-color:#eaf4f6;
+  color:#0a3a40;
+  font-weight:600;
+  font-size:14px;
+  text-decoration:none;
+  transition:all .25s ease
+}
+.btn-ver:hover{background-color:#0a3a40;color:#fff}
+</style>
+
+
+<style>
+.cta-premium-wrap{
+  padding:64px 0;
+}
+.cta-premium-box{
+  width:min(1200px,92%);
+  margin:0 auto;
+  background:linear-gradient(135deg,#e6f4f6,#f8fcfd);
+  border-radius:28px;
+  padding:36px 44px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:32px;
+  box-shadow:0 18px 40px rgba(0,0,0,.08);
+}
+.cta-premium-text h2{
+  margin:0 0 10px;
+  font-size:30px;
+  color:#0b2f33;
+}
+.cta-premium-text p{
+  margin:0;
+  font-size:16px;
+  color:#3b5b5f;
+}
+.cta-premium-actions{
+  display:flex;
+  gap:14px;
+  flex-shrink:0;
+}
+.btn-cta-primary{
+  background:#0b5c66;
+  color:#fff;
+  padding:14px 26px;
+  border-radius:999px;
+  font-weight:600;
+  text-decoration:none;
+  transition:all .25s ease;
+}
+.btn-cta-primary:hover{
+  background:#08424a;
+}
+.btn-cta-secondary{
+  background:#e6f4f6;
+  color:#0b5c66;
+  padding:14px 26px;
+  border-radius:999px;
+  font-weight:600;
+  text-decoration:none;
+  border:1px solid #b9e2e7;
+  transition:all .25s ease;
+}
+.btn-cta-secondary:hover{
+  background:#0b5c66;
+  color:#fff;
+}
+@media(max-width:900px){
+  .cta-premium-box{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
+</style>
 
 </head>
 <body class="site-premium">
 <header class="site-header" id="site-header">
-  <div class="container header__inner">
-    <a class="header__brand" href="index.html" aria-label="Ir al inicio">
-      <img class="header__logo" src="img/header_logo_nav.webp" width="180" height="60" alt="SJT ERP · Grupo AAA Asesores">
-    </a>
-
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
-      <span class="nav-toggle__bar"></span>
-      <span class="nav-toggle__bar"></span>
-      <span class="nav-toggle__bar"></span>
-    </button>
-
-    <nav class="nav" id="primary-nav" aria-label="Navegación principal">
-      <ul class="nav__list">
-        <li class="nav__item nav__item--has-sub">
-          <button class="nav__link nav__link--button is-active" type="button" aria-expanded="false">
-            PRODUCTOS
-            <span class="nav__caret" aria-hidden="true"></span>
-          </button>
-          <ul class="nav__submenu" aria-label="Productos">
-            <li><a class="nav__sublink" href="facturacion-comercial.html">Facturación Comercial</a></li>
-<li><a class="nav__sublink" href="gestion-trazabilidad-planta-de-beneficio-animal.html">Gestiòn Trazabilidad Planta de Beneficio Animal</a></li>
-<li><a class="nav__sublink" href="gestion-administrativa.html">Gestión Administrativa</a></li>
-<li><a class="nav__sublink" href="gestion-cartera-net.html">Gestión Cartera .NET</a></li>
-<li><a class="nav__sublink" href="gestion-comercial.html">Gestión Comercial</a></li>
-<li><a class="nav__sublink" href="gestion-contable.html">Gestión Contable</a></li>
-<li><a class="nav__sublink" href="gestion-documental.html">Gestión Documental</a></li>
-<li><a class="nav__sublink" href="gestion-financiera.html">Gestión Financiera</a></li>
-<li><a class="nav__sublink" href="gestion-gerencial.html">Gestión Gerencial</a></li>
-<li><a class="nav__sublink" href="gestion-hotelera.html">Gestión Hotelera</a></li>
-<li><a class="nav__sublink" href="gestion-judicial.html">Gestión Judicial</a></li>
-<li><a class="nav__sublink" href="gestion-presupuestal.html">Gestión Presupuestal</a></li>
-<li><a class="nav__sublink" href="gestion-salud.html">Gestión Salud</a></li>
-<li><a class="nav__sublink" href="gestion-tributaria.html">Gestión Tributaria</a></li>
-<li><a class="nav__sublink" href="gestion-tecnica.html">Gestión Técnica</a></li>
-<li><a class="nav__sublink" href="gestion-de-auditoria.html">Gestión de Auditoría</a></li>
-<li><a class="nav__sublink" href="gestion-de-control-de-contratos.html">Gestión de Control de Contratos</a></li>
-<li><a class="nav__sublink" href="gestion-de-creditos.html">Gestión de Créditos</a></li>
-<li><a class="nav__sublink" href="gestion-de-gobierno-en-linea.html">Gestión de Gobierno en Línea</a></li>
-<li><a class="nav__sublink" href="gestion-de-impuestos.html">Gestión de Impuestos</a></li>
-<li><a class="nav__sublink" href="gestion-de-inventarios-y-almacen.html">Gestión de Inventarios y Almacén</a></li>
-<li><a class="nav__sublink" href="gestion-de-planeacion-y-presupuesto.html">Gestión de Planeación y Presupuesto</a></li>
-<li><a class="nav__sublink" href="gestion-de-recursos-fisicos.html">Gestión de Recursos Físicos</a></li>
-<li><a class="nav__sublink" href="gestion-de-recursos-humanos.html">Gestión de Recursos Humanos</a></li>
-<li><a class="nav__sublink" href="gestion-de-servicios-publicos.html">Gestión de Servicios Públicos</a></li>
-<li><a class="nav__sublink" href="gestion-de-terceros.html">Gestión de Terceros</a></li>
-<li><a class="nav__sublink" href="gestion-de-vivienda.html">Gestión de Vivienda</a></li>
-<li><a class="nav__sublink" href="otros-modulos-especiales.html">Otros / Módulos Especiales</a></li>
-<li><a class="nav__sublink" href="gestion-tramites-y-procesos-en-linea.html">Trámites y Procesos en Línea</a></li>
-          </ul>
-        </li>
-        <li class="nav__item"><a class="nav__link" href="servicios.html">SERVICIOS</a></li>
-        <li class="nav__item"><a class="nav__link" href="nosotros.html">NOSOTROS</a></li>
-        <li class="nav__item"><a class="nav__link" href="casos-de-exito.html">CASOS DE ÉXITO</a></li>
-        <li class="nav__item"><a class="nav__link" href="index.html#contacto">CONTÁCTENOS</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<main id="main" class="main">
-<section class="page-titlebar">
-  <div class="container">
-    <h1>PRODUCTOS</h1>
-    <p class="subheading">Explora todas las gestiones y módulos seleccionando una entidad</p>
-  </div>
-</section>
-
-<section class="section section--tight">
-  <div class="container">
-    <div class="chips" role="tablist" aria-label="Tipos de entidad">
-      <button class="chip" type="button" data-entity="ALCALDÍAS">ALCALDÍAS</button><button class="chip" type="button" data-entity="GOBERNACIONES">GOBERNACIONES</button><button class="chip" type="button" data-entity="EMPRESAS DE SERVICIOS PÚBLICOS">EMPRESAS DE SERVICIOS PÚBLICOS</button><button class="chip" type="button" data-entity="INSTITUTOS DE VIVIENDA Y FINANCIEROS">INSTITUTOS DE VIVIENDA Y FINANCIEROS</button><button class="chip" type="button" data-entity="INSTITUCIONES EDUCATIVAS">INSTITUCIONES EDUCATIVAS</button><button class="chip" type="button" data-entity="INSTITUTOS DE CULTURA Y DEPORTE / ENTES DESCENTRALIZADOS">INSTITUTOS DE CULTURA Y DEPORTE / ENTES DESCENTRALIZADOS</button><button class="chip" type="button" data-entity="CONTRALORÍAS">CONTRALORÍAS</button>
-    </div>
-  </div>
-</section>
-
-<section class="section section--tight">
-  <div class="container">
-    <div class="panel-grid">
-      <section class="card card--panel" aria-label="Gestiones">
-        <h3 class="coltitle">GESTIONES</h3>
-        <div class="list" id="gestiones-list" role="list"></div>
-      </section>
-
-      <section class="card card--panel" aria-label="Módulos involucrados">
-        <h3 class="coltitle">MÓDULOS INVOLUCRADOS</h3>
-        <div class="modules-grid" id="modulos-grid" aria-live="polite"></div>
-      </section>
-    </div>
-  </div>
-</section>
-
-<section class="cta-final" id="cta-final"><div class="service-text-center"><h3>Conozca SJT ERP en una demo</h3><p>Vea cómo integrar procesos, mejorar la trazabilidad y fortalecer el cumplimiento en su entidad.</p></div><div class="cta-buttons"><a class="btn btn-primary" href="index.html#contacto">Solicitar demo</a><a class="btn btn-secondary" href="servicios.html">Ver servicios</a></div></section>
-
-<div aria-label="Acceso WhatsApp" id="sjt-qa" role="group">
-  <a aria-label="Solicitar demo por correo" class="qa qa--demo" href="mailto:atencionalcliente@sjterp.com" title="Solicitar demo">DEMO</a>
-  <a aria-label="Hablar por WhatsApp" class="qa qa--wa" href="https://wa.me/573118477257" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="Hablar por WhatsApp">WA</a>
+<div class="container header__inner">
+<a aria-label="Ir al inicio" class="header__brand" href="index.html">
+<img alt="SJT ERP · Grupo AAA Asesores" class="header__logo" height="60" src="img/header_logo_nav.webp" width="180"/>
+</a>
+<button aria-controls="primary-nav" aria-expanded="false" aria-label="Abrir menú" class="nav-toggle" type="button">
+<span class="nav-toggle__bar"></span>
+<span class="nav-toggle__bar"></span>
+<span class="nav-toggle__bar"></span>
+</button>
+<nav aria-label="Navegación principal" class="nav" id="primary-nav">
+<ul class="nav__list">
+<li class="nav__item">
+<a class="nav__link" href="productos.html">PRODUCTOS</a>
+</li>
+<li class="nav__item"><a class="nav__link" href="servicios.html">SERVICIOS</a></li><li class="nav__item"><a class="nav__link" href="nosotros.html">NOSOTROS</a></li><li class="nav__item"><a class="nav__link" href="casos-de-exito.html">CASOS DE ÉXITO</a></li><li class="nav__item"><a class="nav__link" href="index.html#contacto">CONTÁCTENOS</a></li></ul>
+</nav>
 </div>
+</header>
+<div aria-hidden="true" class="subbar-green"></div>
+<main class="svc-page" id="contenido"><section class="hero-productos-extendido"><section class="svc-hero hero-nosotros-balanced">
+<div class="svc-hero__inner">
+<h1>Productos</h1>
+<p class="svc-subtitle">Explora y accede directamente a cada gestión del ecosistema SJT ERP.</p>
+</div>
+</section><h2 class="gx-h2 gestiones-title">Gestiones</h2></section>
+<section aria-label="Gestiones SJT ERP" class="productos-capsulas" id="gestiones">
+<div class="wrap">
+<div class="capsulas-grid">
+<a class="capsula" href="facturacion-comercial.html">
+<span class="capsula-title">Facturación Comercial</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-trazabilidad-planta-de-beneficio-animal.html">
+<span class="capsula-title">Gestiòn Trazabilidad Planta de Beneficio Animal</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-administrativa.html">
+<span class="capsula-title">Gestión Administrativa</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-cartera-net.html">
+<span class="capsula-title">Gestión Cartera .NET</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-comercial.html">
+<span class="capsula-title">Gestión Comercial</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-contable.html">
+<span class="capsula-title">Gestión Contable</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-documental.html">
+<span class="capsula-title">Gestión Documental</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-financiera.html">
+<span class="capsula-title">Gestión Financiera</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-gerencial.html">
+<span class="capsula-title">Gestión Gerencial</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-hotelera.html">
+<span class="capsula-title">Gestión Hotelera</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-judicial.html">
+<span class="capsula-title">Gestión Judicial</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-presupuestal.html">
+<span class="capsula-title">Gestión Presupuestal</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-salud.html">
+<span class="capsula-title">Gestión Salud</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-tributaria.html">
+<span class="capsula-title">Gestión Tributaria</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-tecnica.html">
+<span class="capsula-title">Gestión Técnica</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-de-auditoria.html">
+<span class="capsula-title">Gestión de Auditoría</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-de-control-de-contratos.html">
+<span class="capsula-title">Gestión de Control de Contratos</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-de-creditos.html">
+<span class="capsula-title">Gestión de Créditos</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-de-gobierno-en-linea.html">
+<span class="capsula-title">Gestión de Gobierno en Línea</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-de-impuestos.html">
+<span class="capsula-title">Gestión de Impuestos</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-de-inventarios-y-almacen.html">
+<span class="capsula-title">Gestión de Inventarios y Almacén</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-de-recursos-fisicos.html">
+<span class="capsula-title">Gestión de Recursos Físicos</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-de-recursos-humanos.html">
+<span class="capsula-title">Gestión de Recursos Humanos</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-de-servicios-publicos.html">
+<span class="capsula-title">Gestión de Servicios Públicos</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-de-terceros.html">
+<span class="capsula-title">Gestión de Terceros</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-de-vivienda.html">
+<span class="capsula-title">Gestión de Vivienda</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-tramites-y-procesos-en-linea.html">
+<span class="capsula-title">Trámites y Procesos en Línea</span>
+<span aria-hidden="true" class="capsula-cta">Ver</span>
+</a>
+<a class="capsula" href="gestion-de-planeacion-y-presupuesto.html"><span class="capsula-title">Gestión de Planeación y Presupuesto</span><span aria-hidden="true" class="capsula-cta">Ver</span></a></div>
+</div>
+</section>
 </main>
-<footer class="footer" role="contentinfo">
-  <div class="container footer__inner">
-    <div class="footer__grid">
-      <section class="footer__col" aria-label="Acerca de Grupo AAA Asesores">
-        <h4 class="footer__title">Grupo AAA ASESORES</h4>
-        <p class="footer__text">Garantía de trabajo inteligente con SJT ERP. Optimizamos tus procesos, tiempo y talento para máxima productividad.</p>
-      </section>
 
-      <nav class="footer__col" aria-label="Enlaces de compañía">
-        <h4 class="footer__title">Compañía</h4>
-        <p class="footer__links">
-          <a href="index.html">Inicio</a> ·
+
+<section class="cta-premium-wrap" aria-label="Propuesta y contacto">
+  <div class="cta-premium-box">
+    <div class="cta-premium-text">
+      <h2>¿Quieres una propuesta clara para tu entidad?</h2>
+      <p>Cuéntanos tu necesidad y te orientamos con un plan de implementación por fases.</p>
+    </div>
+    <div class="cta-premium-actions">
+      <a href="contacto.html" class="btn-cta-primary">Contactar ahora</a>
+      <a href="casos-de-exito.html" class="btn-cta-secondary">Ver casos de éxito</a>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer" role="contentinfo">
+<div class="container footer__inner">
+<div class="footer__grid">
+<section aria-label="Acerca de Grupo AAA Asesores" class="footer__col">
+<h4 class="footer__title">Grupo AAA ASESORES</h4>
+<p class="footer__text">Garantía de trabajo inteligente con SJT ERP. Optimizamos tus procesos, tiempo y talento para máxima productividad.</p>
+</section>
+<nav aria-label="Enlaces de compañía" class="footer__col">
+<h4 class="footer__title">Compañía</h4>
+<p class="footer__links">
+<a href="index.html">Inicio</a> ·
           <a href="productos.html">Productos</a> ·
           <a href="servicios.html">Servicios</a> ·
           <a href="nosotros.html">Nosotros</a> ·
           <a href="casos-de-exito.html">Casos de éxito</a> ·
           <a href="index.html#contacto">Contáctenos</a>
-        </p>
-      </nav>
-
-      <section class="footer__col" aria-label="Redes sociales">
-        <h4 class="footer__title">Síguenos</h4>
-        <div class="social">
-          <a class="social__link" aria-label="Facebook" href="https://www.facebook.com/ERPSJT" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="Facebook">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M22 12.06C22 6.48 17.52 2 11.94 2 6.37 2 1.89 6.48 1.89 12.06c0 4.99 3.65 9.13 8.42 9.94v-7.03H7.9v-2.9h2.41V9.41c0-2.39 1.42-3.71 3.6-3.71 1.04 0 2.13.19 2.13.19v2.35h-1.2c-1.18 0-1.55.73-1.55 1.48v1.77h2.64l-.42 2.9h-2.22V22c4.77-.81 8.42-4.95 8.42-9.94z"></path></svg>
-          </a>
-          <a class="social__link" aria-label="LinkedIn" href="https://www.linkedin.com/company/grupo-aaa-asesores-s-a-s/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4zM9 8h3.8v2.2h.05c.53-1 1.84-2.2 3.78-2.2 4.04 0 4.79 2.66 4.79 6.1V24h-4v-7.1c0-1.7-.03-3.9-2.4-3.9-2.4 0-2.77 1.86-2.77 3.78V24H9z"></path></svg>
-          </a>
-          <a class="social__link" aria-label="YouTube" href="https://www.youtube.com/@grupoaaaasesores9214" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="YouTube">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M23.5 6.2s-.23-1.63-.95-2.35c-.9-.95-1.9-.96-2.36-1.02C16.9 2.5 12 2.5 12 2.5h-.01s-4.9 0-8.19.33c-.46.06-1.46.07-2.36 1.02-.72.72-.95 2.35-.95 2.35S0 8.1 0 10v1.9c0 1.9.23 3.8.23 3.8s.23 1.63.95 2.35c.9.95 2.08.92 2.61 1.02 1.9.18 8.21.24 8.21.24s4.9 0 8.19-.33c.46-.06 1.46-.07 2.36-1.02.72-.72.95-2.35.95-2.35s.23-1.9.23-3.8V10c0-1.9-.23-3.8-.23-3.8zM9.5 13.75V7.75l6 3-6 3z"></path></svg>
-          </a>
-          <a class="social__link" aria-label="X" href="https://x.com/SJT_erp" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="X">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18.244 2H21.5l-7.27 8.3L22.5 22h-6.03l-4.72-5.58L5.3 22H2l7.79-8.9L2 2h6.11l4.33 5.02L18.244 2zm-1.06 18h1.75L8.9 4H7.09l10.095 16z"></path></svg>
-          </a>
-        </div>
-      </section>
-    </div>
-
-    <small class="footer__copyright">© 2026 Grupo AAA. Todos los derechos reservados.</small>
-  </div>
+</p>
+</nav>
+<section aria-label="Redes sociales" class="footer__col">
+<h4 class="footer__title">Síguenos</h4>
+<div class="social">
+<a aria-label="Facebook" class="social__link" href="https://www.facebook.com/ERPSJT" rel="noopener noreferrer" target="_blank" title="Facebook">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M22 12.06C22 6.48 17.52 2 11.94 2 6.37 2 1.89 6.48 1.89 12.06c0 4.99 3.65 9.13 8.42 9.94v-7.03H7.9v-2.9h2.41V9.41c0-2.39 1.42-3.71 3.6-3.71 1.04 0 2.13.19 2.13.19v2.35h-1.2c-1.18 0-1.55.73-1.55 1.48v1.77h2.64l-.42 2.9h-2.22V22c4.77-.81 8.42-4.95 8.42-9.94z"></path></svg>
+</a>
+<a aria-label="LinkedIn" class="social__link" href="https://www.linkedin.com/company/grupo-aaa-asesores-s-a-s/" rel="noopener noreferrer" target="_blank" title="LinkedIn">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4zM9 8h3.8v2.2h.05c.53-1 1.84-2.2 3.78-2.2 4.04 0 4.79 2.66 4.79 6.1V24h-4v-7.1c0-1.7-.03-3.9-2.4-3.9-2.4 0-2.77 1.86-2.77 3.78V24H9z"></path></svg>
+</a>
+<a aria-label="YouTube" class="social__link" href="https://www.youtube.com/@grupoaaaasesores9214" rel="noopener noreferrer" target="_blank" title="YouTube">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M23.5 6.2s-.23-1.63-.95-2.35c-.9-.95-1.9-.96-2.36-1.02C16.9 2.5 12 2.5 12 2.5h-.01s-4.9 0-8.19.33c-.46.06-1.46.07-2.36 1.02-.72.72-.95 2.35-.95 2.35S0 8.1 0 10v1.9c0 1.9.23 3.8.23 3.8s.23 1.63.95 2.35c.9.95 2.08.92 2.61 1.02 1.9.18 8.21.24 8.21.24s4.9 0 8.19-.33c.46-.06 1.46-.07 2.36-1.02.72-.72.95-2.35.95-2.35s.23-1.9.23-3.8V10c0-1.9-.23-3.8-.23-3.8zM9.5 13.75V7.75l6 3-6 3z"></path></svg>
+</a>
+<a aria-label="X" class="social__link" href="https://x.com/SJT_erp" rel="noopener noreferrer" target="_blank" title="X">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M18.244 2H21.5l-7.27 8.3L22.5 22h-6.03l-4.72-5.58L5.3 22H2l7.79-8.9L2 2h6.11l4.33 5.02L18.244 2zm-1.06 18h1.75L8.9 4H7.09l10.095 16z"></path></svg>
+</a>
+</div>
+</section>
+</div>
+<small class="footer__copyright">© 2026 Grupo AAA. Todos los derechos reservados.</small>
+</div>
 </footer>
-<script src="assets/js/main.js" defer></script>
-
+<script defer="" src="assets/js/main.js"></script>
 <!-- FLOATING ACTION BUTTONS -->
-
-
 <style>
 #floating-actions {
   position: fixed;
@@ -254,31 +625,14 @@ a.wa-float img{
 .wa-fab { background: transparent !important; box-shadow: none !important; }
 .wa-fab img { width: 56px; height: 56px; display:block; }
 
-
-/* WhatsApp icon clean (no background) */
-.wa-fab {
-  background: transparent !important;
-  box-shadow: none !important;
-  border: none !important;
-  padding: 0 !important;
-}
-.wa-fab img {
-  width: 56px;
-  height: 56px;
-  display: block;
-}
-
 </style>
-</div>
-
 <!-- FLOATING ACTIONS -->
 <div class="floating-actions">
-  <a href="#contacto" class="demo-float">DEMO</a>
-  <a href="https://wa.me/573117669857" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-    <img src="assets/img/whatsapp_transparent.png" alt="WhatsApp">
-  </a>
+<a class="demo-float" href="#contacto">DEMO</a>
+<a aria-label="WhatsApp" class="wa-float" href="https://wa.me/573117669857" target="_blank">
+<img alt="WhatsApp" src="assets/img/whatsapp_transparent.png"/>
+</a>
 </div>
-
 <style>
 .floating-actions {
   position: fixed;
@@ -344,6 +698,5 @@ a.wa-float img{
   .wa-float img { width: 34px; height: 34px; }
 }
 </style>
-
 </body>
 </html>
