@@ -2392,3 +2392,26 @@ body.casos-premium-scope .cliente-name{
 .productos-capsulas{
   background:#ffffff;
 }
+
+
+/* === MOBILE HAMBURGER FIX (compact lines) === */
+@media (max-width: 900px){
+  .hamburger,
+  .menu-toggle,
+  .nav-toggle{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:4px !important;
+  }
+  .hamburger span,
+  .menu-toggle span,
+  .nav-toggle span,
+  .hamburger div,
+  .menu-toggle div,
+  .nav-toggle div{
+    height:2px !important;
+    margin:0 !important;
+    padding:0 !important;
+  }
+}
