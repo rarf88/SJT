@@ -1867,28 +1867,6 @@ header,
   }
 }
 
-/* === Ajuste de armonía editorial del título === */
-.hero-title {
-  font-size: clamp(2.3rem, 3.1vw, 3.2rem);
-  line-height: 1.12;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  max-width: 760px;
-  margin-bottom: 1.4rem;
-}
-
-.hero-title span {
-  display: block;
-  font-size: 0.9em;
-  font-weight: 600;
-  opacity: 0.9;
-  margin-top: 0.35rem;
-}
-
-.hero-nosotros-premium .hero-content {
-  align-items: flex-start;
-}
-
 /* === Nosotros: Hero centrado + balanceado === */
 .hero-nosotros-balanced {
   padding: 6rem 1.5rem 5rem;
@@ -1949,22 +1927,6 @@ header,
   .hero-balance {
     grid-template-columns: 1fr;
   }
-}
-
-/* === Ajuste final de jerarquía del título (2 líneas limpias) === */
-.hero-title-center span {
-  display: block;
-}
-
-.hero-title-line-1 {
-  font-weight: 800;
-}
-
-.hero-title-line-2 {
-  font-weight: 600;
-  font-size: 0.92em;
-  margin-top: 0.35rem;
-  opacity: 0.95;
 }
 
 /* === Garantizar una sola línea elegante para el primer renglón === */
@@ -2124,4 +2086,309 @@ body.casos-premium-scope .cliente-name{
     justify-content:center;
     font-weight:700;
     box-shadow:0 10px 25px rgba(0,0,0,.28);
+}
+
+/* === FIX: Capacidades clave cards (responsive & overflow safe) === */
+.capacidades,
+.capacidades-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.capacidad-card {
+  overflow: hidden;
+}
+
+.capacidad-card h3 {
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.capacidad-card ul,
+.capacidad-card li {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+  .capacidades,
+  .capacidades-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .capacidades,
+  .capacidades-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .capacidad-card {
+    padding: 18px 16px;
+  }
+
+  .capacidad-card h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .capacidad-card ul {
+    font-size: 0.95rem;
+  }
+}
+
+/* === HARD FIX: Capacidades clave RESPONSIVE (FORCED) === */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.capacidades,
+.capacidades-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.capacidad-card {
+  flex: 1 1 280px;
+  max-width: 360px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.capacidad-card h3 {
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  text-align: center;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.capacidad-card ul {
+  padding-left: 18px;
+}
+
+.capacidad-card li {
+  font-size: clamp(0.9rem, 2.8vw, 1rem);
+  line-height: 1.4;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+  .capacidad-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .capacidades,
+  .capacidades-grid {
+    gap: 14px;
+  }
+
+  .capacidad-card {
+    padding: 16px !important;
+  }
+}
+
+/* === FIX REAL: "Capacidades clave" en páginas de Gestiones (gx-*) === */
+.gx-grid2 {
+  min-width: 0;
+}
+
+.gx-grid2 .gx-card {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.gx-grid2 .gx-card h3 {
+  white-space: normal !important;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  text-align: center;
+  font-size: clamp(0.95rem, 3.2vw, 1.1rem);
+}
+
+.gx-grid2 .gx-card ul,
+.gx-grid2 .gx-card li {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Tablet: 2 columnas */
+@media (max-width: 900px) {
+  .gx-grid2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important; /* override inline */
+  }
+}
+
+/* Móvil: 1 columna (evita que se corte "AUTOMATIZA / CONTROLA / REPORTA") */
+@media (max-width: 600px) {
+  .gx-grid2 {
+    grid-template-columns: 1fr !important; /* override inline */
+    gap: 14px !important;
+  }
+
+  .gx-grid2 .gx-card {
+    padding: 18px 16px !important;
+  }
+}
+
+/* === Productos: cápsulas (basadas en Casos de Éxito) === */
+.productos-pills{ background:#f7fbfb; padding: 2.2rem 0 3.2rem; }
+.pills-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:14px;
+}
+.pill-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px 12px;
+  border-radius:999px;
+  border:1px solid rgba(11,47,53,.18);
+  background:#ffffff;
+  color:#0b2f35;
+  font-weight:800;
+  letter-spacing:-.01em;
+  text-decoration:none;
+  box-shadow: 0 10px 25px rgba(0,0,0,.06);
+  transition: transform .22s ease, box-shadow .22s ease, background .22s ease;
+  min-height:36px;
+  font-size:0.92rem;
+  line-height:1;
+}
+.pill-link:hover{ transform: translateY(-2px); box-shadow:0 14px 30px rgba(0,0,0,.08); }
+.pill-link:focus-visible{ outline:3px solid rgba(15,95,104,.35); outline-offset:3px; }
+.pill-link:active{ transform: translateY(0); }
+@media (max-width: 900px){
+  .pill-link{ font-size:0.95rem; padding:9px 13px; }
+}
+@media (max-width: 520px){
+  .pills-grid{ gap:8px; }
+  .pill-link{ width:100%; justify-content:flex-start; padding:12px 14px; }
+}
+
+/* === PRODUCTOS_CAPSULAS_ULTRA_V2 === */
+.productos-capsulas{padding:3.5rem 0;background:transparent}
+.productos-capsulas .gx-h2{text-align:center;margin-bottom:.4rem}
+.productos-capsulas .gx-sub{text-align:center;max-width:860px;margin:0 auto 1.9rem}
+
+.capsulas-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:14px;
+}
+
+.capsula{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:16px 18px;
+  border-radius:16px;
+  background:#ffffff;
+  border:1px solid rgba(15,108,116,.14);
+  text-decoration:none;
+  box-shadow:0 14px 34px rgba(0,0,0,.08);
+  transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+  min-height:64px;
+  overflow:hidden;
+}
+.capsula:before{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  border-radius:16px;
+  background:linear-gradient(135deg, rgba(15,108,116,.14), rgba(15,108,116,0));
+  opacity:0;
+  transition:opacity .22s ease;
+  pointer-events:none;
+}
+.capsula-title{
+  font-weight:800;
+  color:#0b2f35;
+  line-height:1.15;
+  font-size:0.98rem;
+}
+.capsula-cta{
+  font-weight:900;
+  font-size:0.78rem;
+  letter-spacing:.03em;
+  color:rgba(15,108,116,.95);
+  background:rgba(15,108,116,.08);
+  padding:.42rem .62rem;
+  border-radius:999px;
+  white-space:nowrap;
+}
+.capsula:hover{
+  transform:translateY(-3px);
+  box-shadow:0 22px 56px rgba(15,108,116,.18);
+  border-color:rgba(15,108,116,.30);
+}
+.capsula:hover:before{opacity:1}
+.capsula:focus-visible{
+  outline:3px solid rgba(15,108,116,.28);
+  outline-offset:3px;
+}
+@media(max-width:1100px){.capsulas-grid{grid-template-columns:repeat(3,minmax(0,1fr));}}
+@media(max-width:860px){.capsulas-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:520px){
+  .capsulas-grid{grid-template-columns:1fr;}
+  .capsula{padding:16px 16px;}
+}
+
+/* El grid arranca limpio, sin degradado */
+.productos-capsulas{
+  background:#ffffff;
+}
+
+/* === Productos: Degradado limpio hasta Gestiones === */
+
+
+.gestiones-title{
+  text-align: center;
+  font-weight: 700;
+  margin: 32px 0 0;
+  padding-bottom: 24px; /* punto exacto de corte */
+}
+
+/* Corte limpio: desde aquí todo blanco */
+.productos-capsulas{
+  background:#ffffff;
+  padding-top: 32px;
+}
+
+/* === Productos: degradado continuo sin cortes === */
+.hero-productos-extendido{
+  background: linear-gradient(
+    180deg,
+    #0f6b73 0%,
+    #157e86 35%,
+    #6fb8bd 65%,
+    #cfe9eb 85%,
+    #ffffff 100%
+  );
+  padding-bottom: 56px;
+}
+
+.hero-productos-extendido *{
+  background: transparent !important;
+}
+
+.gestiones-title{
+  margin-top: 40px;
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+/* Desde aquí todo blanco */
+.productos-capsulas{
+  background:#ffffff;
 }

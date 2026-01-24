@@ -1,0 +1,70 @@
+
+/* FOOTER MOBILE PREMIUM FIX (targets actual markup: .footer__grid / .footer__col / .footer__links) */
+@media (max-width: 768px) {
+
+  footer.footer {
+    padding: 28px 20px !important;
+  }
+
+  /* Stack columns */
+  footer.footer .footer__grid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 22px !important;
+  }
+
+  footer.footer .footer__col {
+    width: 100% !important;
+    max-width: 360px !important;
+    text-align: center !important;
+  }
+
+  footer.footer .footer__title {
+    margin-bottom: 10px !important;
+  }
+
+  /* Make brand text readable and not overly tall */
+  footer.footer .footer__text {
+    line-height: 1.65 !important;
+    margin: 0 !important;
+    opacity: 0.92;
+  }
+
+  /* Turn the inline "·" links into a clean vertical list.
+     Hide separator dots by zeroing container font-size, then restoring on <a>. */
+  footer.footer .footer__links {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0 !important;     /* hides " · " text nodes */
+  }
+
+  footer.footer .footer__links a {
+    display: block !important;
+    padding: 8px 0 !important;
+    font-size: 16px !important;  /* restores readable size */
+    text-decoration: none !important;
+  }
+
+  /* Social icons row */
+  footer.footer .social {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 14px !important;
+    flex-wrap: wrap;
+  }
+
+  footer.footer .social__link {
+    margin: 0 !important;
+  }
+
+  /* Copyright spacing */
+  footer.footer .footer__bottom,
+  footer.footer .copyright,
+  footer.footer small {
+    text-align: center !important;
+    margin-top: 16px !important;
+    font-size: 12px !important;
+    opacity: 0.75;
+  }
+}

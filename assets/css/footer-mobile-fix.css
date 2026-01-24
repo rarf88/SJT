@@ -1,0 +1,44 @@
+
+/* Footer mobile cleanup – SAFE, mobile-only */
+@media (max-width: 768px) {
+  footer {
+    padding: 32px 20px !important;
+  }
+
+  footer .footer-container,
+  footer .footer-content,
+  footer .footer-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 24px !important;
+  }
+
+  footer h4,
+  footer h5 {
+    margin-bottom: 12px !important;
+  }
+
+  footer ul {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  footer ul li {
+    margin-bottom: 10px !important;
+  }
+
+  footer .social-icons,
+  footer .social-links {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 16px !important;
+  }
+
+  footer .copyright {
+    margin-top: 24px !important;
+    font-size: 13px !important;
+    opacity: 0.85;
+  }
+}

@@ -1,0 +1,31 @@
+
+@media (max-width: 768px) {
+  .hamburger,
+  .menu-toggle,
+  .nav-toggle {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  
+  gap:6px;
+}
+
+  .hamburger span,
+  .menu-toggle span,
+  .nav-toggle span {
+    display: block !important;
+    width: 24px;
+    height: 2px;
+    border-radius: 2px;
+  
+  gap:6px;
+
+  margin:3px 0;
+  height:2px;
+
+  margin:3px 0;
+  height:2px;
+}
+}
